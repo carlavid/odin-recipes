@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(rgb(117, 217, 106), rgb(209, 234, 208));
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1, h3, li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+img {
+    border-radius: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 25%;
+    border: 3px solid green;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.513);
+    text-align: left;
+  }
+
+li {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
