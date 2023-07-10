@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-h1, h3, li {
+h1, h3, li, p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -16,6 +16,12 @@ img {
     border-radius: 25px;
 }
 
+p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 0;
+}
 .center {
     margin: auto;
     width: 25%;
