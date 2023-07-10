@@ -1,10 +1,13 @@
 body {
     background: linear-gradient(rgb(117, 217, 106), rgb(209, 234, 208));
     background-attachment: fixed;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1, h3, li, p {
+h1, h3, li, .image__title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -12,16 +15,51 @@ h1 {
     font-size: 30px;
 }
 
-img {
-    border-radius: 25px;
+.image {
+    position: relative;
+    width: 350px;
 }
 
-p {
-    text-align: center;
-    font-size: 15px;
-    margin-top: 0;
-    padding-top: 0;
+.image__img {
+    display: block;
+    border-radius: 25px;
+    width: 100%;
 }
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opactity 0.25s;
+}
+
+.image__title {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image_overlay:hover > * {
+    transform: translateY(0);
+}
+
 .center {
     margin: auto;
     width: 25%;
@@ -30,7 +68,7 @@ p {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.513);
     text-align: left;
-  }
+}
 
 li {
     font-size: 18px;
